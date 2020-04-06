@@ -324,4 +324,11 @@ def rules_java_toolchains():
 
     It doesn't do anything at the moment.
     """
-    pass
+
+    native.register_toolchains("@rules_java//java/toolchains/javac/linux:all")
+    native.register_toolchains("@rules_java//java/toolchains/javac/macos:all")
+    native.register_toolchains("@rules_java//java/toolchains/javac/windows:all")
+    native.register_toolchains("@rules_java//java/toolchains/runtime:local_jdk")
+    native.register_toolchains("@rules_java//java/toolchains/runtime/remote/linux:all")
+    native.register_toolchains("@rules_java//java/toolchains/runtime/remote/macos:all")
+    native.register_toolchains("@rules_java//java/toolchains/runtime/remote/windows:all")

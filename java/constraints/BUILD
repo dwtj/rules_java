@@ -1,4 +1,6 @@
-# Standard constraint_settings and constraint_values for Java.
+# Legacy constraint_settings and constraint_values for Java.
+# These are here just to keep copybara happy.
+# Must be removed after internal cl/261072597 is submitted.
 
 package(default_visibility = ["//visibility:public"])
 
